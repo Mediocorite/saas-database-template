@@ -57,7 +57,14 @@ export default async function Home() {
             </Link>
           </div>
         </div>
-
+        {session && (
+          <Link
+            href={"/tableview"}
+            className="rounded-full bg-white/10 px-10 py-3 font-semibold no-underline transition hover:bg-white/20"
+          >
+            Check out the table view
+          </Link>
+        )}
         <CrudShowcase />
       </div>
     </main>
