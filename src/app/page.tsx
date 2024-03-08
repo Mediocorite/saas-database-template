@@ -34,6 +34,7 @@ export default async function Home() {
           {/* TODO: Contact page */}
           <Button variant={"outline"}>Contact us</Button>
         </div>
+      </section>
         {/* Automated video */}
         {/* TODO: Create a lead video. */}
         <LeadVideo />
@@ -43,7 +44,6 @@ export default async function Home() {
         <ProductInfo />
         {/* TODO: Use Case Component */}
         {/* TODO: Join us now component */}
-      </section>
       {/* TODO: Footer component */}
     </>
   );
