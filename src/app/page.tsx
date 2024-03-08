@@ -4,10 +4,7 @@ import Link from "next/link";
 import { CreatePost } from "@/app/_components/create-post";
 import { getServerAuthSession } from "@/server/auth";
 import { api } from "@/trpc/server";
-import { Button } from "@/components/ui/button";
-import LeadVideo from "./_components/leadvideo";
-import CustomerStories from "./_components/customerstories";
-import ProductInfo from "./_components/productinfo";
+import LeadHero from "./_components/leadHero";
 
 export default async function Home() {
   noStore();
@@ -15,37 +12,9 @@ export default async function Home() {
   const session = await getServerAuthSession();
 
   return (
-    <>
-      {/* Lead Section */}
-      <section className="flex w-full flex-col items-center justify-center gap-10 text-center">
-        <h1 className="mt-36 text-5xl font-semibold tracking-tight">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </h1>
-        <div className="">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere rem
-          natus ex provident! Aspernatur iusto incidunt, eius molestiae
-          temporibus culpa?
-        </div>
-        <div className="flex gap-10">
-          {/* TODO: Pricing page */}
-          <Button variant={"default"} className="bg-blue-500 hover:bg-blue-700">
-            Start a Free Trail
-          </Button>
-          {/* TODO: Contact page */}
-          <Button variant={"outline"}>Contact us</Button>
-        </div>
-      </section>
-        {/* Automated video */}
-        {/* TODO: Create a lead video. */}
-        <LeadVideo />
-        {/* TODO: Create Customer Story component */}
-        <CustomerStories />
-        {/* TODO: Create a sticky animation */}
-        <ProductInfo />
-        {/* TODO: Use Case Component */}
-        {/* TODO: Join us now component */}
-      {/* TODO: Footer component */}
-    </>
+    <div className="m-t-96">
+      <LeadHero />
+    </div>
   );
 
   if (false)
