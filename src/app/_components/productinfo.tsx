@@ -1,5 +1,10 @@
 "use client";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import React from "react";
 const content = [
   {
@@ -47,17 +52,21 @@ export default function StickyScrollRevealDemo() {
   return (
     <div className="flex">
       <div className="relative">
-        {content.map((element) => (
-          <div className="sticky top-0 left-0 min-h-screen flex items-center justify-center">
+        {content.map((element, index) => (
+          <div
+            key={index}
+            className="sticky left-0 top-0 flex min-h-screen items-center justify-center"
+          >
             {element.content}
           </div>
         ))}
       </div>
       <div className="relative">
-        {content.map((element) => (
-          <div className="min-h-screen flex items center justify-center">
-            
-          </div>
+        {content.map((element, index) => (
+          <div
+            key={index}
+            className="items center flex min-h-screen justify-center"
+          ></div>
         ))}
       </div>
     </div>

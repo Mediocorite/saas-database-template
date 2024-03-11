@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { default as logo } from "public/logo.svg";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/library/utils";
 import Image from "next/image";
@@ -34,7 +33,7 @@ export default function Navigation() {
       >
         {/* Logo */}
 
-        <Image src={logo} alt="logo" />
+        <Image src={"public/logo.svg"} alt="logo" unoptimized />
         <span>Logo</span>
       </Link>
       <div className="flex-grow"></div> {/* This creates the gap */}

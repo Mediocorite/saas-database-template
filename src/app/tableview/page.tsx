@@ -16,12 +16,13 @@ async function getData(): Promise<Payment[]> {
 }
 
 export default async function DemoPage() {
-  const session = await getServerAuthSession();
-  const data = await getData();
-  if (!session) redirect("/");
-  return (
-    <div className="container mx-auto py-10">
-      <DataTable columns={columns} data={data} />
-    </div>
-  );
+  return null;
+  // const session = await getServerAuthSession();
+  // const data = await getData();
+  // if (!session) redirect("/");
+  // return (
+  //   <div className="container mx-auto py-10">
+  //     <DataTable columns={columns} data={data} />
+  //   </div>
+  // );
 }

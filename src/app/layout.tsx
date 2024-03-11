@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`font-sans ${inter.variable} background-gradient`}
         style={{
-          backgroundImage: `url(${background.src})`,
+          backgroundImage: `url(${background})`,
           backgroundRepeat: "repeat",
         }}
       >

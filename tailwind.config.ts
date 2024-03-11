@@ -11,6 +11,7 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./src/library/custom.d.ts",
   ],
   prefix: "",
   theme: {
