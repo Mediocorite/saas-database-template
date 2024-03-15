@@ -5,6 +5,9 @@ import { CreatePost } from "@/app/_components/create-post";
 import { getServerAuthSession } from "@/server/auth";
 import { api } from "@/trpc/server";
 import LeadHero from "./_components/leadHero";
+import { ProductInfo } from "./_components/productinfo";
+import { UseCases } from "./_components/use-cases";
+import ContactUs from "./_components/contact-us";
 
 export default async function Home() {
   noStore();
@@ -14,6 +17,9 @@ export default async function Home() {
   return (
     <div className="m-t-96">
       <LeadHero />
+      <ProductInfo />
+      <UseCases />
+      <ContactUs />
     </div>
   );
 

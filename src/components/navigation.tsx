@@ -33,7 +33,7 @@ export default function Navigation() {
       >
         {/* Logo */}
 
-        <Image src={"public/logo.svg"} alt="logo" unoptimized />
+        <Image src={"public/logo.svg"} alt="logo" unoptimized fill />
         <span>Logo</span>
       </Link>
       <div className="flex-grow"></div> {/* This creates the gap */}
